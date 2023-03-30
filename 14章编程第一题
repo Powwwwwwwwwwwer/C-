@@ -1,0 +1,9 @@
+void print_ledger(int x)
+{
+#ifdef OPITION_LONG
+	print_ledger_long;
+#elif OPITION_DETAILED
+	print_ledger_detailed;
+#else
+	print_ledger_default;
+}
